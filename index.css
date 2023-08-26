@@ -1,235 +1,62 @@
-*{
-    @import url("https://img.pikbest.com/backgrounds/20220119/science-and-technology-earth-blue-poster-background_6242226.jpg!w700wp");
-    text-align: center;
-    width: 500px;
-    height: 300px;
-    }
-    
-    *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-    
-    
-    body {
-    font-family: "Nunito";
-    font-size: 18px;
-    background-color: #ed7f7fb0;
-    
-    }
-    
-    h1 {
-    font-family: "Playfair Display";
-    font-size: 2.7rem;
-    font-weight: 700;
-    
-    }
-    p {
-    color: #6b1010;
-    margin: 1rem 0;
-    }
-    
-    li {
-    list-style: none;
-    }
-    
-    a {
-    text-decoration: none;
-    color:black;
-    } 
-    a:visited {color:black;} 
-    a:active {color:#FDC435;} 
-    a:hover {color:white;} 
-    
-    header {
-    font-family: "Comfortaa";
-    position: relative;
-    }
-    
-    .header > img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
-    width: 50%;
-    }
-    
-    .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem;
-    
-    }
-    
-    .nav > ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    }
-    
-    nav > h2 {
-    font-weight: 700;
-    font-size: 1.4rem;
-    }
-    
-    nav > h2 a:hover {
-    color: black;
-    }
-    
-    nav >ul >li> a:hover {
-    text-decoration: underline;
-    color:white;
-    }
-    
-    
-    .main {
-    width: 90vw;
-    margin: auto;
-    }
-    
-    .code-img {
-    width: 70vh;
-    min-width: 20vh;
-    margin-left: 3rem;
-    box-shadow: 28px 10px 15px -3px rgba(0,0,0,0.1);
-    
-    }
-    
-    .presentacion {
-    display: flex;
-    align-items: center;
-    }
-    
-    .presentacion > article {
-    display: flex;
-    flex-direction: column;
-    max-width: 80vh;
-    }
-    
-    main>section > article:nth-child(even){
-    flex-direction: row;    
-    }
-    
-    #presentacion h2 {
-    color: #fd35d8;
-    font-size: 1.1rem;
-    }
-    .btn {
-    padding: 12px 14px;
-    border-radius: 8px;
-    }
-    
-    .curriculum {
-    background-color: #fd35a6;
-    border: none;
-    }
-    
-    .linkedin {
-    background-color: none;
-    border: 1px black solid;
-    }
-    .linkedin a:hover {
-    color:#fd35e2;
-    }
-    
-    article {
-    width: 70vw;
-    margin: 3rem auto;
-    display: flex;
-    flex-direction: row-reverse;
-    }
-    
-    .bg-white {
-    background-color: white;
-    }
-    
-    .curriculum>article>div {
-    width: 50vw;
-    padding: 3rem;
-    }
-    
-    .btn-curriculum{
-    border: 1px solid black;
-    border-radius: 24px;
-    padding: 8px 24px;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-    }
-    
-    .btn-curriculum:hover {
-    color: #fd35e9;
-    
-    }
-    
-    .btn-curriculum>a:hover {
-    text-decoration: none;
-    color: #fd35e9;
-    }
-    
-    .sobre-mi {
-    display: flex;
-    align-items: center;
-    }
-    
-    .sobre-mi>article {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    }
-    
-    .container-foto-perfil {
-    width: 375px;
-    height: 375px;
-    border-radius: 50%;
-    background-color: #e935fd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .foto-perfil {
-    width: 60%;
-    height: 60%;
-    border-radius: 50%;
-    background-image: url("./assets/foto-perfil");
-    text-align:center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display:flex;
-    justify-content:center;
-    }
-    
-    .contacto{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    }
-    
-    footer>ul, small {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: baseline;
-    }
-    
-    .fa-brands, .fa-solid {
-    font-size: 1.5rem;
-    }
-    
-    footer {
-    position: relative;
-    height: 100%;
-    }
-    
-    footer>img {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: -1;
-    }
-    
+
+   @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+   
+body {
+  margin: 0;
+  padding: 0;
+  background: lightblue;
+}
+
+  .paper {
+  position: absolute ;
+  height: 550px;
+  width: 450px;
+  background: rgba(255,255,255,0.9);
+  margin: -275px -225px;
+  left: 50%;
+  top: 50%;
+  box-shadow: 0px 0px 5px 0px #888;
+  }
+  .paper::before {
+    content: '';
+  position: absolute;
+  left: 45px;
+  height: 100%;
+  width: 2px;
+  background: rgba(255,0,0,0.4);
+}
+.lines {
+  margin-top: 40px;
+  height: calc(100% - 40px);
+  width: 100%;
+  background-image: repeating-linear-gradient(white 0px, white 24px, steelblue 25px);
+}
+.text {
+  position: absolute;
+  top: 65px;
+  left: 55px;
+  bottom: 10px;
+  right: 10px;
+  line-height: 25px;
+  font-family: "Indie Flower";
+  overflow: hidden;
+  outline: none;
+}
+.holes {
+  position: absolute;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  background: lightgoldenrodyellow;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 2px 0px #888;
+}
+.hole-top {
+  top: 10%;
+}
+.hole-middle {
+  top: 50%;
+}
+.hole-bottom {
+  bottom: 10%;
+} 
